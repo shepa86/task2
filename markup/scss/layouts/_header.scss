@@ -1,0 +1,102 @@
+#header {
+	background: url(../images/light-h-bg.jpg) repeat-x;
+
+	.top-row {
+		height: 36px;
+
+		background: url(../images/bg-top.jpg) repeat-x;
+	 
+
+		.top-row-wrap {
+			margin: 0 auto;
+			padding: 10px 10px 0;
+			max-width: 960px;
+			font: 11px/12px $base-font-sans-serif;
+			color: $light-gray;
+		}
+
+		a {
+			color: $white;
+			text-decoration: none;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+
+		.title {
+
+		}
+		.user-box {
+			float: right;
+		}
+	}
+
+	.logo {
+		margin-top: 10px;
+	}
+
+	ul {
+		@extend %listreset;
+	}
+
+}
+.text-slogan {
+	font: 10px/20px $base-font-serif;
+	color: $light-gray;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding-left: 30px;
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	border-left: 1px solid $light-gray;
+
+
+}
+
+.logo {
+
+	img {
+		max-width: 100%;
+		height: auto;
+		
+	}
+
+	a {
+	display: inline-block;
+	vertical-align: top;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.nav {
+
+
+	a {
+		color: #38332c;
+		font-weight: 900;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	ul li{ 
+		display: inline-block;
+		vertical-align: top;} 
+
+	@include media (">tablet") {
+	
+	}
+
+	 
+	
+}
+
+.nav-holder {
+		float: right;
+	}
+
+ 
