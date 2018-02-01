@@ -1,11 +1,12 @@
 #header {
 	background: url(../images/light-h-bg.jpg) repeat-x;
+	min-height: 120px;
 
 	.top-row {
 		height: 36px;
 
 		background: url(../images/bg-top.jpg) repeat-x;
-	 
+
 
 		.top-row-wrap {
 			margin: 0 auto;
@@ -41,6 +42,7 @@
 	}
 
 }
+
 .text-slogan {
 	font: 10px/20px $base-font-serif;
 	color: $light-gray;
@@ -60,12 +62,11 @@
 	img {
 		max-width: 100%;
 		height: auto;
-		
 	}
 
 	a {
-	display: inline-block;
-	vertical-align: top;
+		display: inline-block;
+		vertical-align: top;
 
 		&:hover {
 			opacity: 0.8;
@@ -73,30 +74,104 @@
 	}
 }
 
-.nav {
-
-
-	a {
-		color: #38332c;
-		font-weight: 900;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-
-	ul li{ 
-		display: inline-block;
-		vertical-align: top;} 
-
-	@include media (">tablet") {
-	
-	}
-
-	 
-	
-}
+// .nav {
+// 	ul {
+// 		font-size: 0;
+// 		line-height: 0;
+// 	}
+// }
 
 .nav-holder {
-		float: right;
+	float: right;
+	margin-top: -10px;
+}
+
+.navbar-nav {
+	font-size: 0;
+	line-height: 0;
+
+
+	>li {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 900;
+		position: relative;
+		z-index: 999;
+
+		>a {
+			padding: 46px 20px 20px;
+		}
 	}
 
- 
+	li {
+		display: inline-block;
+		vertical-align: top;
+
+		a{
+			color: #38332c;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: block;
+		}
+	}
+}
+
+
+.second-level {
+	width: 160px;
+	background: #38332c;
+	position: absolute;
+	z-index: 999;
+	display: none;
+	top: 90px;
+	left: 12px;
+	right: 0;
+
+	&:before {
+			content: '';
+			width: 100%;
+			height: 20px;
+			position: absolute;
+			z-index: 900;
+			background: #f4f;
+			top: -20px;
+		}
+
+}
+
+.active {
+	background: $orange;
+	
+
+
+
+}
+
+
+.hover {
+	>a {
+		background: $orange;
+
+	}
+
+	a {
+		color: $white!important;
+	}
+
+	.second-level {
+		display: block;
+		border-top: 1px solid $orange;
+
+		li {
+			width: 100%;
+			a {
+				font-size: 12px;
+				line-height: 14px;
+				font-weight: 400;
+				padding: 10px 10px;
+			}
+		}
+	}
+
+	
+}
