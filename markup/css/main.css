@@ -358,7 +358,7 @@ th {
   padding: 0;
   list-style: none; }
 
-.clearfix:after {
+.clearfix:after, .container:after {
   content: '';
   display: block;
   clear: both; }
@@ -525,7 +525,8 @@ input[type='submit'] {
   min-height: 120px; }
   #header .top-row {
     height: 36px;
-    background: url(../images/bg-top.jpg) repeat-x; }
+    background: url(../images/bg-top.jpg) repeat-x;
+    border-bottom: 1px solid #181613; }
     #header .top-row .top-row-wrap {
       margin: 0 auto;
       padding: 10px 10px 0;
@@ -540,14 +541,15 @@ input[type='submit'] {
     #header .top-row .user-box {
       float: right; }
   #header .logo {
-    margin-top: 10px; }
+    margin-top: 27px;
+    display: inline-block; }
 
 .text-slogan {
-  font: 10px/20px "Times New Roman", "Times", "Baskerville", "Georgia", serif;
+  font: 10px/20px "Noto Serif", "Times New Roman", "Times", "Baskerville", "Georgia", serif;
   color: #9c9c9c;
-  margin-top: 10px;
-  margin-left: 20px;
-  padding-left: 30px;
+  margin-top: 30px;
+  margin-left: 11px;
+  padding-left: 13px;
   display: inline-block;
   vertical-align: top;
   height: 20px;
@@ -571,13 +573,25 @@ input[type='submit'] {
   font-size: 0;
   line-height: 0; }
   .navbar-nav > li {
-    font-size: 14px;
-    line-height: 16px;
+    font: bold 14px/16px "Open Sans Condensed", "Times New Roman", "Times", "Baskerville", "Georgia", serif;
     font-weight: 900;
     position: relative;
     z-index: 999; }
     .navbar-nav > li > a {
-      padding: 46px 20px 20px; }
+      padding: 43px 21px 20px 22px;
+      position: relative; }
+      .navbar-nav > li > a:after {
+        content: '';
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background: #bf6c2f;
+        position: absolute;
+        z-index: 900;
+        top: 50px;
+        right: 2px; }
+    .navbar-nav > li:last-child > a:after {
+      display: none; }
   .navbar-nav li {
     display: inline-block;
     vertical-align: top; }
@@ -590,9 +604,11 @@ input[type='submit'] {
 .second-level {
   width: 160px;
   background: #38332c;
+  border-top: 1px solid #bf6c2f;
   position: absolute;
-  z-index: 999;
-  display: none;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
   top: 90px;
   left: 12px;
   right: 0; }
@@ -601,9 +617,14 @@ input[type='submit'] {
     width: 100%;
     height: 20px;
     position: absolute;
-    z-index: 900;
-    background: #f4f;
-    top: -20px; }
+    z-index: -1;
+    top: -14px; }
+  .second-level li {
+    width: 100%; }
+    .second-level li a {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 8px 18px; }
 
 .active {
   background: #bf6c2f; }
@@ -615,13 +636,6 @@ input[type='submit'] {
   color: #fff !important; }
 
 .hover .second-level {
-  display: block;
-  border-top: 1px solid #bf6c2f; }
-  .hover .second-level li {
-    width: 100%; }
-    .hover .second-level li a {
-      font-size: 12px;
-      line-height: 14px;
-      font-weight: 400;
-      padding: 10px 10px; }
+  visibility: visible;
+  opacity: 1; }
 /*# sourceMappingURL=main.css.map */
