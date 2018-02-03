@@ -1,4 +1,63 @@
 #footer {
-	
+	background: #333;
+	.footer-block-title {
+		font-style: 16px;
+		line-height: 30px;
+		color: $white;
+		margin-bottom: 14px;
+		text-transform: uppercase;
+		display: block;
+		border-bottom: 1px solid $gray;
+
+	}
+
+}
+.social-list {
+	@extend %listreset;
+	li {
+		display: inline-block;
+		margin-right: 4px;
+
+	}
+
+	a {
+		color: $light-gray;
+		display: block;
+		text-decoration: none;
+
+		&:hover {
+			color: $orange;
+
+		}
+
+	}
 }
 
+
+.icon-twitter,
+.icon-facebook,
+.icon-g,
+.icon-rss,
+.icon-world {
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+	height: 35px;
+	width: 35px;
+	background: $gray;
+	border-radius: 50%;
+	padding: 7px 0px 0 7px;
+
+	&:hover {
+			opacity: 0.8;
+			 
+		}
+
+ 
+}
+
+
+.footer-block {
+
+	padding: 0 10px 30px
+}
