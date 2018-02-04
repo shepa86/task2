@@ -4,13 +4,12 @@
 	overflow: hidden;
 	height: 9999px;
 }
+
 .container {
 	margin: 0 auto;
 	padding: 0 10px;
 	max-width: 960px;
-	
 	@extend %clearfix;
-
 }
 
 h1 {
@@ -22,7 +21,6 @@ h1 {
 a {
 	color: $orange;
 	text-decoration: none;
-
 }
 
 input:not([type="submit"]):not([type="reset"]),
@@ -50,7 +48,8 @@ input:not([type="submit"]):not([type="reset"]) {
 }
 
 .input-wrap {
-	margin-bottom: 18px;
+	margin-bottom: 23px;
+
 	.input-title {
 		font-weight: 700;
 		font-size: 12px;
@@ -61,7 +60,6 @@ input:not([type="submit"]):not([type="reset"]) {
 
 	.required {
 		color: #9c9c9c;
-
 	}
 }
 
@@ -88,7 +86,12 @@ input:not([type="submit"]):not([type="reset"]) {
 
 .page-header {
 	background: url(../images/bg-page-header.jpg) repeat;
-	padding: 30px 0;
+	padding: 36px 0;
+	margin-bottom: 46px;
+
+	@include media ('<480px') {
+		padding: 18px 0;
+	}
 
 	.title {
 		font-size: 24px;
@@ -103,17 +106,23 @@ input:not([type="submit"]):not([type="reset"]) {
 		font-size: 11px;
 		color: $light-gray;
 
+		@include media ('<480px') {
+			float: none;
+		}
+
 		ul {
 			@extend %listreset;
 		}
 
 		.breadcrumbs {
-
 			li {
 				display: inline-block;
 				vertical-align: top;
 				padding: 0  0 0 30px;
 				position: relative;
+				@include media ('<480px') {
+					padding: 0 30px 0 0 ;
+				}
 
 				&:before {
 					content: ">";
@@ -122,6 +131,10 @@ input:not([type="submit"]):not([type="reset"]) {
 					top: 0;
 					line-height: inherit;
 					left: 12px;
+
+					@include media ('<480px') {
+						left: -20px;
+					}
 				}
 
 				&:first-child:before {
@@ -141,6 +154,7 @@ input:not([type="submit"]):not([type="reset"]) {
 		}
 	}
 }
+
 
 .row {
 	display: flex;
@@ -162,25 +176,41 @@ input:not([type="submit"]):not([type="reset"]) {
 	vertical-align: top;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-
-
 }
-.column-2 {
-	.location {
-		padding: 0 60px 0 0;
-	}
-	
-	.contact {
-		form {
-			background: #f1f0eb;
-			padding: 20px;
+
+.column-2-holder {
+	>.column-2 {
+		@include media ('<tablet') {
+			width: 100%;
 		}
 	}
+}
 
+
+.location {
+	.map-holder {
+		margin-bottom: 35px;
+
+		iframe {
+			width: 100%;
+		}
+	}
+}
+
+.contact {
+	margin-left: 10px;
+
+	form {
+		background: #f1f0eb;
+		padding: 20px;
+	}
+
+	@include media ('<tablet') {
+		margin-left: 0;
+	}
 }
 
 address {
-
 	font-weight: 700;
 	line-height: 20px;
 
@@ -191,10 +221,8 @@ address {
 	}
 
 	a {
-		 
 		&:hover {
 			opacity: 0.8;
-			
 		}
 	}
 
@@ -206,4 +234,6 @@ address {
 	}
 }
 
-
+.contact-section {
+	margin-bottom: 50px;
+}

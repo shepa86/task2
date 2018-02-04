@@ -1,15 +1,16 @@
 #footer {
-	background: #333;
+	background: #39332c;
 	color: $light-gray;
+	padding-top: 54px;
+
 	.footer-block-title {
-		font-style: 16px;
+		font-size: 16px;
 		line-height: 30px;
 		color: $white;
-		margin-bottom: 14px;
+		margin-bottom: 20px;
 		text-transform: uppercase;
 		display: block;
 		border-bottom: 1px solid $gray;
-
 	}
 
 	a {
@@ -18,13 +19,33 @@
 		}
 	}
 
+	>.container {
+		>.row {
+			margin-left: -10px;
+
+			@include media ('<480px') {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.column-4{
+		@include media ('<tablet') {
+			width: 50%;
+		}
+
+		@include media ('<480px') {
+			width: 100%;
+		}
+	}
 }
+
 .social-list {
 	@extend %listreset;
 	li {
 		display: inline-block;
 		margin-right: 4px;
-
+		margin-bottom: 8px;
 	}
 
 	a {
@@ -35,9 +56,7 @@
 		&:hover {
 			opacity: 1;
 			color: $orange;
-
 		}
-
 	}
 
 	.icon-twitter,
@@ -54,37 +73,43 @@
 		border-radius: 50%;
 		padding: 7px 0px 0 7px;
 
-
-
-
+		@include media ('<desktop') {
+			font-size: 16px;
+			line-height: 16px;
+			height: 26px;
+			width: 26px;
+			padding: 5px 0px 0 5px;
+		}
 	}
 }
 
-
-
-
-
 .footer-block {
+	padding: 0 10px 40px;
 
-	padding: 0 10px 30px;
-
-
+	@include media ('<480px') {
+		padding: 0 10px 20px;
+	}
 }
 
 .call_us {
 	font-size: 24px;
 	line-height: 26px;
 
+
 }
 
 .twit {
 	padding: 0 0 24px 20px;
 	position: relative;
+
 	p {
 		margin-bottom: 10px;
 	}
+
 	.date {
 		color: $white;
+		font-size: 10px;
+		line-height: 12px;
 	}
 
 	.icon-twitter {
@@ -92,7 +117,7 @@
 		z-index: 100;
 		left: 0;
 		top: 2px;
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 14px;
 		color: $white;
 		background: none;
@@ -100,15 +125,48 @@
 }
 
 .blog {
-	
 	ul {
 		@extend %listreset;
-
 		li {
-			padding: 0 0 24px 20px;
+			padding: 0 0 16px 20px;
 			position: relative;
-			line-height: 14px;
 
+			span {
+				position: absolute;
+				z-index: 100;
+				left: 0;
+				top: 2px;
+				font-size: 14px;
+				line-height: 14px;
+				color: $white;
+				background: none;
+			}
 		}
 	}
+
+	a {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+.flickr {
+	.row {
+		margin-left: -5px;
+		
+		.img-holder {
+			width: 33.3%;
+			height: auto;
+			padding: 0 5px 10px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.bottom-row {
+	padding: 24px 0;
+	background: #25211d;
 }
