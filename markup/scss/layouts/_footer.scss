@@ -1,5 +1,6 @@
 #footer {
 	background: #333;
+	color: $light-gray;
 	.footer-block-title {
 		font-style: 16px;
 		line-height: 30px;
@@ -9,6 +10,12 @@
 		display: block;
 		border-bottom: 1px solid $gray;
 
+	}
+
+	a {
+		&:hover {
+			opacity: 0.8;
+		}
 	}
 
 }
@@ -26,38 +33,82 @@
 		text-decoration: none;
 
 		&:hover {
+			opacity: 1;
 			color: $orange;
 
 		}
 
 	}
+
+	.icon-twitter,
+	.icon-facebook,
+	.icon-g,
+	.icon-rss,
+	.icon-world {
+		display: block;
+		font-size: 20px;
+		line-height: 20px;
+		height: 35px;
+		width: 35px;
+		background: $gray;
+		border-radius: 50%;
+		padding: 7px 0px 0 7px;
+
+
+
+
+	}
 }
 
 
-.icon-twitter,
-.icon-facebook,
-.icon-g,
-.icon-rss,
-.icon-world {
-	display: block;
-	font-size: 20px;
-	line-height: 20px;
-	height: 35px;
-	width: 35px;
-	background: $gray;
-	border-radius: 50%;
-	padding: 7px 0px 0 7px;
 
-	&:hover {
-			opacity: 0.8;
-			 
-		}
-
- 
-}
 
 
 .footer-block {
 
-	padding: 0 10px 30px
+	padding: 0 10px 30px;
+
+
+}
+
+.call_us {
+	font-size: 24px;
+	line-height: 26px;
+
+}
+
+.twit {
+	padding: 0 0 24px 20px;
+	position: relative;
+	p {
+		margin-bottom: 10px;
+	}
+	.date {
+		color: $white;
+	}
+
+	.icon-twitter {
+		position: absolute;
+		z-index: 100;
+		left: 0;
+		top: 2px;
+		font-size: 12px;
+		line-height: 14px;
+		color: $white;
+		background: none;
+	}
+}
+
+.blog {
+	
+	ul {
+		@extend %listreset;
+
+		li {
+			padding: 0 0 24px 20px;
+			position: relative;
+			line-height: 14px;
+
+		}
+	}
 }

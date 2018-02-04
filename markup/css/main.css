@@ -353,7 +353,7 @@ td,
 th {
   padding: 0; }
 
-.page-header .breadcrumbs-nav ul, #header ul, .social-list {
+.page-header .breadcrumbs-nav ul, #header ul, .social-list, .blog ul {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -563,6 +563,10 @@ h1 {
   line-height: 28px;
   text-transform: uppercase; }
 
+a {
+  color: #bf6c2f;
+  text-decoration: none; }
+
 input:not([type="submit"]):not([type="reset"]),
 textarea {
   margin: 0;
@@ -691,11 +695,8 @@ address {
     display: block;
     font-weight: 400;
     margin-bottom: 28px; }
-  address a {
-    color: #bf6c2f;
-    text-decoration: none; }
-    address a:hover {
-      opacity: 0.8; }
+  address a:hover {
+    opacity: 0.8; }
   address .tel-links a {
     color: #63615e; }
 
@@ -819,7 +820,8 @@ address {
   opacity: 1; }
 
 #footer {
-  background: #333; }
+  background: #333;
+  color: #9c9c9c; }
   #footer .footer-block-title {
     font-style: 16px;
     line-height: 30px;
@@ -828,6 +830,8 @@ address {
     text-transform: uppercase;
     display: block;
     border-bottom: 1px solid #63615e; }
+  #footer a:hover {
+    opacity: 0.8; }
 
 .social-list li {
   display: inline-block;
@@ -838,13 +842,14 @@ address {
   display: block;
   text-decoration: none; }
   .social-list a:hover {
+    opacity: 1;
     color: #bf6c2f; }
 
-.icon-twitter,
-.icon-facebook,
-.icon-g,
-.icon-rss,
-.icon-world {
+.social-list .icon-twitter,
+.social-list .icon-facebook,
+.social-list .icon-g,
+.social-list .icon-rss,
+.social-list .icon-world {
   display: block;
   font-size: 20px;
   line-height: 20px;
@@ -853,13 +858,33 @@ address {
   background: #63615e;
   border-radius: 50%;
   padding: 7px 0px 0 7px; }
-  .icon-twitter:hover,
-  .icon-facebook:hover,
-  .icon-g:hover,
-  .icon-rss:hover,
-  .icon-world:hover {
-    opacity: 0.8; }
 
 .footer-block {
   padding: 0 10px 30px; }
+
+.call_us {
+  font-size: 24px;
+  line-height: 26px; }
+
+.twit {
+  padding: 0 0 24px 20px;
+  position: relative; }
+  .twit p {
+    margin-bottom: 10px; }
+  .twit .date {
+    color: #fff; }
+  .twit .icon-twitter {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 2px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    background: none; }
+
+.blog ul li {
+  padding: 0 0 24px 20px;
+  position: relative;
+  line-height: 14px; }
 /*# sourceMappingURL=main.css.map */

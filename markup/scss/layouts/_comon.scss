@@ -19,6 +19,12 @@ h1 {
 	text-transform: uppercase;
 }
 
+a {
+	color: $orange;
+	text-decoration: none;
+
+}
+
 input:not([type="submit"]):not([type="reset"]),
 textarea {
 	margin: 0;
@@ -185,8 +191,7 @@ address {
 	}
 
 	a {
-		color:$orange;
-		text-decoration: none;
+		 
 		&:hover {
 			opacity: 0.8;
 			
