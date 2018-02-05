@@ -3,6 +3,8 @@
 	position: relative;
 	overflow: hidden;
 	height: 9999px;
+
+	
 }
 .container {
 	margin: 0 auto;
@@ -10,6 +12,10 @@
 	max-width: 960px;
 	
 	@extend %clearfix;
+
+	@include media("<tablet") {
+		padding: 0;
+	}
 
 }
 
