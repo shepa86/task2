@@ -1,11 +1,10 @@
 #footer {
-	background: #39332c;
+	background:  url(../images/pat1-2x.png), linear-gradient(to right, rgba(64,57,49,1) 0%,rgba(60,56,47,1) 22%,rgba(62,55,49,1) 22%,rgba(60,53,45,1) 33%,rgba(57,52,46,1) 44%,rgba(54,49,43,1) 59%,rgba(60,53,47,1) 100%);
 	color: $light-gray;
 	padding-top: 54px;
 
 	.footer-block-title {
-		font-size: 16px;
-		line-height: 30px;
+		font: 700 16px/30px  'Open Sans Condensed', $base-font-sans-serif;
 		color: $white;
 		margin-bottom: 20px;
 		text-transform: uppercase;
@@ -44,7 +43,7 @@
 	@extend %listreset;
 	li {
 		display: inline-block;
-		margin-right: 4px;
+		margin-right: 2PX;
 		margin-bottom: 8px;
 	}
 
@@ -65,13 +64,13 @@
 	.icon-rss,
 	.icon-world {
 		display: block;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 20px;
-		height: 35px;
-		width: 35px;
+		height: 32px;
+		width: 32px;
 		background: $gray;
 		border-radius: 50%;
-		padding: 7px 0px 0 7px;
+		padding:7px 0px 0 7px;
 
 		@include media ('<desktop') {
 			font-size: 16px;
@@ -84,7 +83,7 @@
 }
 
 .footer-block {
-	padding: 0 10px 40px;
+	padding: 0 10px 30px;
 
 	@include media ('<480px') {
 		padding: 0 10px 20px;
@@ -92,18 +91,19 @@
 }
 
 .call_us {
-	font-size: 24px;
-	line-height: 26px;
+	font: 700 24px/26px  'Open Sans Condensed', $base-font-sans-serif;
+
 
 
 }
 
 .twit {
-	padding: 0 0 24px 20px;
+	font: 12px/18px "Noto Serif", $base-font-serif;
+	padding: 0 0 18px 20px;
 	position: relative;
 
 	p {
-		margin-bottom: 10px;
+		margin-bottom: 0;
 	}
 
 	.date {
@@ -168,5 +168,6 @@
 
 .bottom-row {
 	padding: 24px 0;
-	background: #25211d;
+	background: url(../images/pat1-2x.png), #25211d;
+	border-top: 1px solid darken(#25211d, 5%)
 }
