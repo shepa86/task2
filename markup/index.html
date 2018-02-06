@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="nav-holder">
-					<div class="container">
+				<div class="container">
 					<strong class="logo">
 						<a href="#"><img src="images/logo.png" alt="BLIT"></a>
 					</strong>
@@ -33,7 +33,7 @@
 					<nav class="nav">
 						<ul class="navbar-nav">
 							<li >
-								<a class="has-drop-down-a item-list" href="#">Home</a>
+								<a class="item-list" href="#">Home</a>
 								<ul class="second-level">
 									<li >
 										<a href="#">abaut us</a>
@@ -126,26 +126,25 @@
 						<div class="column-2">
 							<div class="contact">
 								<h2>Contact Form</h2>
-								<form action="#">
+								<form action="#" class="form-validation">
 									<div class="input-wrap">
-										<span class="input-title">Your Name <span class=" required ">(required)</span></span>
-										<input type="text" placeholder="" required>
-										<span class="error"></span>
+										<label class="input-title" for="#name">Your Name <span class=" required ">(required)</span></label>
+										<input type="text" placeholder="" id="#name" data-required="true">
+										<span class="error">error message</span>
 									</div>
 									<div class="input-wrap">
-										<span class="input-title">E-mail <span class="required">(required)</span></span>
-										<input type="email" placeholder="" required>
-										<span class="error"></span>
+										<label class="input-title" for="#email">E-mail <span class="required">(required)</span></label>
+										<input type="email" placeholder="" id="#email" data-required="true">
+										<span class="error">error message</span>
 									</div>
 									<div class="input-wrap">
-										<span class="input-title">Website</span>
-										<input type="text" placeholder="">
-										<span class="error"></span>
+										<label class="input-title" for="#url">Website</label>
+										<input type="text" placeholder="" id="#url" >
 									</div>
-									<div class="input-wrap" >
-										<span class="input-title">Your Message <span class="required">(required)</span></span>
-										<textarea name="name" id="name" cols="30" rows="10" required></textarea>	
-										<span class="error"></span>
+									<div class="input-wrap"  >
+										<label class="input-title" for="#message">Your Message <span class="required">(required)</span></label>
+										<textarea  cols="30" rows="10" id="#message" data-required="true" ></textarea>	
+										<span class="error">error message</span>
 									</div>
 									<button type="submit" class="btn">send massage</button>
 								</form>
@@ -159,57 +158,51 @@
 			<div class="container">
 				<div class="row">
 					<div class="column-4">
-						<div class="footer-block">
-							<strong class="footer-block-title">Social Networks</strong>
-							<ul class="social-list">
-								<li><a href="#"><span class="icon-twitter"></span></a></li>
-								<li><a href="#"><span class="icon-facebook"></span></a></li>
-								<li><a href="#"><span class="icon-g"></span></a></li>
-								<li><a href="#"><span class="icon-world" ></span></a></li>
-								<li><a href="#"><span class="icon-rss"></span></a></li>
-							</ul>
-						</div>
+						<strong class="footer-block-title">Social Networks</strong>
+						<ul class="social-list">
+							<li><a href="#"><span class="icon-twitter"></span></a></li>
+							<li><a href="#"><span class="icon-facebook"></span></a></li>
+							<li><a href="#"><span class="icon-g"></span></a></li>
+							<li><a href="#"><span class="icon-world" ></span></a></li>
+							<li><a href="#"><span class="icon-rss"></span></a></li>
+						</ul>
 						<div class="footer-block">
 							<strong class="footer-block-title">need an Answer?</strong>
 							<a href="tel:1900123456789" class="call_us">1-900-1234-5678</a>
 						</div>
 					</div>
 					<div class="column-4">
-						<div class="footer-block">
-							<span class="footer-block-title">Twitter Updates</span>
-							<div class="twit">
-								<span class="icon-twitter"></span>
-								<p><a href="#">@danfisher_dev</a> Pellentesque eget ante massa, eu interdum turpis. Nulla facilisi eros, at congue :)</p>
-								<span class="date">2 days ago</span>
-							</div>
-							<div class="twit">
-								<span class="icon-twitter"></span>
-								<p><a href="#">@danfisher_dev</a> Nulla sed dolor ligula, in egestas ipsum. In orci nisi, consectetur nisl massa ut metus. </p>
-								<span class="date">2 days ago</span>
-							</div>
+						<strong class="footer-block-title">Twitter Updates</strong>
+						<div class="twit">
+							<span class="icon-twitter"></span>
+							<p><a href="#">@danfisher_dev</a> Pellentesque eget ante massa, eu interdum turpis. Nulla facilisi eros, at congue :)</p>
+							<span class="date">2 days ago</span>
+						</div>
+						<div class="twit">
+							<span class="icon-twitter"></span>
+							<p><a href="#">@danfisher_dev</a> Nulla sed dolor ligula, in egestas ipsum. In orci nisi, consectetur nisl massa ut metus. </p>
+							<span class="date">2 days ago</span>
 						</div>
 					</div>
 					<div class="column-4">
-						<div class="footer-block blog">
-							<span class="footer-block-title">From the Blog</span>
+						<strong class="footer-block-title">From the Blog</strong>
+						<ul  class="blog">
+							<li><span class="icon-calendar"></span><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+							<li><span class="icon-calendar"></span><a href="#">Aenean justo mauris, rhoncus nec tempor convallis</a></li>
+							<li><span class="icon-calendar"></span><a href="#">Nulla euismod ullamcorper tortor,  sed aliquam</a></li>
+						</ul>
+					</div>
+					<div class="column-4">
+						<strong class="footer-block-title">Flickr</strong>
+						<div class="flickr">
 							<ul>
-								<li><span class="icon-calendar"></span><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
-								<li><span class="icon-calendar"></span><a href="#">Aenean justo mauris, rhoncus nec tempor convallis</a></li>
-								<li><span class="icon-calendar"></span><a href="#">Nulla euismod ullamcorper tortor,  sed aliquam</a></li>
+								<li class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></li>
+								<li class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></li>
+								<li class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></li>
+								<li class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></li>
+								<li class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></li>
+								<li class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></li>
 							</ul>
-						</div>
-					</div>
-					<div class="column-4">
-						<div class="footer-block flickr">
-							<span class="footer-block-title">Flickr</span>
-							<div class="row">
-								<div class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></div>
-								<div class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></div>
-								<div class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></div>
-								<div class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></div>
-								<div class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></div>
-								<div class="img-holder"><a href="#"><img src="images/img-flicr.jpg" alt="image description"></a></div>
-							</div>
 						</div>
 					</div>
 				</div>

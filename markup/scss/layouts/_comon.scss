@@ -13,9 +13,9 @@
 }
 
 h1 {
-		font:  700 24px/28px 'Open Sans Condensed', $base-font-sans-serif;
-		color: $white;
-		text-transform: uppercase;
+	font:  700 24px/28px 'Open Sans Condensed', $base-font-sans-serif;
+	color: $white;
+	text-transform: uppercase;
 }
 
 h2 {
@@ -51,12 +51,27 @@ textarea {
 	}
 }
 
+.error{
+	display: none;
+	position: absolute;
+	bottom: -15px;
+	left: 0px;
+	color: red;
+
+}
+
+.input-error+.error{
+	display: block;
+	margin-top: 5px;
+}
+
 input:not([type="submit"]):not([type="reset"]) {
 	height: 30px;
 }
 
 .input-wrap {
 	margin-bottom: 23px;
+	position: relative;
 
 	.input-title {
 		font-weight: 700;
@@ -94,7 +109,7 @@ input:not([type="submit"]):not([type="reset"]) {
 .page-header {
 	background: url(../images/pat1-2x.png), linear-gradient(to right, rgba(97,89,87,1) 0%,rgba(90,82,80,1) 44%,rgba(86,81,78,1) 48%,rgba(77,72,69,1) 86%,rgba(76,71,68,1) 100%);
 	border-top: 1px solid darken(#56504e, 5%);
-	padding: 36px 0;
+	padding: 36px 0 26px;
 	margin-bottom: 46px;
 
 	h1 {
@@ -185,6 +200,7 @@ input:not([type="submit"]):not([type="reset"]) {
 }
 
 .location {
+	margin-bottom: 20px;
 	.map-holder {
 		margin-bottom: 16px;
 		padding: 6px;
@@ -199,19 +215,19 @@ input:not([type="submit"]):not([type="reset"]) {
 }
 
 .contact {
+	margin-bottom: 20px;
 
 	form {
-		background: #f1f0eb;
-		padding: 20px;
+
+		@include media('>tablet') {
+			background: #f1f0eb;
+			padding: 20px;
+		}
 
 		textarea {
-			min-height: 175px;
-			max-height: 175px;
+			min-height: 155px;
+			max-height: 155px;
 		}
-	}
-
-	@include media ('<tablet') {
-		margin-left: 0;
 	}
 }
 
@@ -239,7 +255,7 @@ address {
 }
 
 .contact-section {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 
 	.column-2-holder {
 		margin-left: -10px;
