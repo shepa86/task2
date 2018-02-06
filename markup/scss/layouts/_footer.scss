@@ -43,7 +43,8 @@
 	@extend %listreset;
 	li {
 		display: inline-block;
-		margin-right: 2PX;
+		vertical-align: top;
+		margin-right: 2px;
 		margin-bottom: 8px;
 	}
 

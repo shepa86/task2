@@ -18,11 +18,27 @@ function initTouchNav() {
 
 // mobile menu init
 function initMobileNav() {
-	jQuery('body').mobileNav({
-		menuActiveClass: 'nav-active',
-		menuOpener: '.nav-opener',
-		
-		menuDrop: '.navbar-nav'
+	var win = jQuery(window);
+
+	// handle layout resize
+	ResponsiveHelper.addRange({
+		'..768': {
+			on: function() {
+				jQuery('body').mobileNav({
+					menuActiveClass: 'nav-active',
+					menuOpener: '.nav-opener',
+					menuDrop: '.navbar-nav',
+					hideOnClickOutside: true
+				});
+			},
+			off: function() {
+				jQuery('body').data('MobileNav').destroy();
+				var active = $('.nav-active');
+				if(active){
+					active.removeClass('nav-active');
+				}
+			}
+		}
 	});
 }
 
