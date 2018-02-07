@@ -16,15 +16,15 @@
 	<div id="wrapper">
 		<header id="header">
 			<div class="top-row">
-				<div class="top-row-wrap">
+				<div class="container">
 					<span class="title">Welcome to our website!</span>
 					<span class="user-box">
 						Have an account? <a href="#">Log in</a> or <a href="#">Sign up</a>
 					</span>
 				</div>
 			</div>
-			<div class="container">
-				<div class="nav-holder">
+			<div class="nav-holder">
+					<div class="container">
 					<strong class="logo">
 						<a href="#"><img src="images/logo.png" alt="BLIT"></a>
 					</strong>
@@ -91,10 +91,10 @@
 				</div>
 			</div>
 		</header>
-		<main role="main" id="main">
+		<main id="main">
 			<div class="page-header">
 				<div class="container">
-					<strong class="title">Contact Us</strong>
+					<h1>Contact Us</h1>
 					<nav class="breadcrumbs-nav">
 						<ul class="breadcrumbs">
 							<li><a href="#">Home </a></li>
@@ -109,32 +109,32 @@
 					<div class="row column-2-holder">
 						<div class="column-2">
 							<div class="location">
-								<span class="block-title">Our Location</span>
+								<h2>Our Location</h2>
 								<div class="map-holder">
 									<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d41042.01627859199!2d36.2586064!3d49.9902468!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1517607344967" width="450" height="286" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
-								<span class="block-title">Contact Info</span>
+								<h2>Contact Info</h2>
 								<address >
 									<strong class="title">Envato Pty Ltd, 89 Third Main Street, Miami, USA</strong> 
 									Phone: <span class="tel-links"><a href="tel:+18001234567">+1 800 123 4567</a></span> <br/>	
 									Fax: <span class="tel-links"><a href="tel:+18001234567">+1 800 123 4567</a></span><br/>
-									E-mail: <span class="email"><a href=" mailto:&#032;&#100;&#101;&#109;&#111;&#064;&#121;&#111;&#117;&#114;&#115;&#105;&#116;&#101;&#046;&#099;&#111;&#109;">&#032;&#100;&#101;&#109;&#111;&#064;&#121;&#111;&#117;&#114;&#115;&#105;&#116;&#101;&#046;&#099;&#111;&#109;</a></span><br/>
+									E-mail: <span class="email"><a href="mailto:&#032;&#100;&#101;&#109;&#111;&#064;&#121;&#111;&#117;&#114;&#115;&#105;&#116;&#101;&#046;&#099;&#111;&#109;">&#032;&#100;&#101;&#109;&#111;&#064;&#121;&#111;&#117;&#114;&#115;&#105;&#116;&#101;&#046;&#099;&#111;&#109;</a></span><br/>
 									Web: <a href="www.smartchoice.com">www.smartchoice.com</a>
 								</address>
 							</div>
 						</div>
 						<div class="column-2">
 							<div class="contact">
-								<span class="block-title">Contact Form</span>
+								<h2>Contact Form</h2>
 								<form action="#">
 									<div class="input-wrap">
 										<span class="input-title">Your Name <span class=" required ">(required)</span></span>
-										<input type="text" placeholder="">
+										<input type="text" placeholder="" required>
 										<span class="error"></span>
 									</div>
 									<div class="input-wrap">
 										<span class="input-title">E-mail <span class="required">(required)</span></span>
-										<input type="email" placeholder="">
+										<input type="email" placeholder="" required>
 										<span class="error"></span>
 									</div>
 									<div class="input-wrap">
@@ -142,9 +142,9 @@
 										<input type="text" placeholder="">
 										<span class="error"></span>
 									</div>
-									<div class="input-wrap">
+									<div class="input-wrap" >
 										<span class="input-title">Your Message <span class="required">(required)</span></span>
-										<textarea name="" id="" cols="30" rows="10"></textarea>	
+										<textarea name="name" id="name" cols="30" rows="10" required></textarea>	
 										<span class="error"></span>
 									</div>
 									<button type="submit" class="btn">send massage</button>
@@ -160,7 +160,7 @@
 				<div class="row">
 					<div class="column-4">
 						<div class="footer-block">
-							<span class="footer-block-title">Social Networks</span>
+							<strong class="footer-block-title">Social Networks</strong>
 							<ul class="social-list">
 								<li><a href="#"><span class="icon-twitter"></span></a></li>
 								<li><a href="#"><span class="icon-facebook"></span></a></li>
@@ -170,7 +170,7 @@
 							</ul>
 						</div>
 						<div class="footer-block">
-							<span class="footer-block-title">need an Answer?</span>
+							<strong class="footer-block-title">need an Answer?</strong>
 							<a href="tel:1900123456789" class="call_us">1-900-1234-5678</a>
 						</div>
 					</div>

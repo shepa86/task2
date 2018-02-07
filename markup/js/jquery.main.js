@@ -46,7 +46,7 @@ function initMobileNav() {
 // navigation accesibility module
 function TouchNav(opt) {
 	this.options = {
-		hoverClass: 'hover',
+		hoverClass: 'active',
 		menuItems: 'li',
 		menuOpener: 'a',
 		menuDrop: 'ul',

@@ -1,0 +1,24 @@
+1 +++ https://s3.amazonaws.com/scrstorage/q68257kvg4o9954675.jpg лишние отступы
+2 +++ https://s3.amazonaws.com/scrstorage/6p8h285e2tfi19362.jpg для active state используем класс active
+3 https://s3.amazonaws.com/scrstorage/ssq6828ct866k075875.jpg вот этот класс должен довешиваться джеесом. Нужно для того, что когда в лишке есть дроп, в админке не руками добавляли класс, а автоматом джс довешивал его. Как дойдешь до этого пункта - маякуй. покажу.
+4 +++ https://s3.amazonaws.com/scrstorage/68t3o1r505f92b6195.gif - высоту нужно фиксировать
+5 +++ https://s3.amazonaws.com/scrstorage/6a8t32982167745.jpg
+6 +++ https://s3.amazonaws.com/scrstorage/683b3629t414gx1v6d4.jpg а если добавить еще контента?
+7 +++ https://s3.amazonaws.com/scrstorage/68340343l9ts37va4.jpg лишний класс, тут можно заюзать контейнер
+8 +++ https://s3.amazonaws.com/scrstorage/68d345mx786744q14.jpg поменяй местами.
+9. +++ https://s3.amazonaws.com/scrstorage/6834u91usa626q7244.jpg это должен быть паддинг на холдере
+10 https://s3.amazonaws.com/scrstorage/68o351o81b778g961.jpg используй короткую запись + https://s3.amazonaws.com/scrstorage/683w5403q6joyv1t92j83.jpg зачем к маржину еще и паддинг?
+11 https://s3.amazonaws.com/scrstorage/68g35d7g12bs4998w76.jpg высота на текст не ставиться
+12 https://s3.amazonaws.com/scrstorage/d6ml836e20v21839m92.jpg https://s3.amazonaws.com/scrstorage/68376cr08681939.jpg все что касается шрифта, должно быть на родителе (на улке)
+13 https://s3.amazonaws.com/scrstorage/p6u837112m4k46147.jpg в таких случаях нужно использовать еще и ресет для инлайн блочных элементов. Дойдешь - зови, поясню.
+14 https://s3.amazonaws.com/scrstorage/udl6m837q791679dmex265.jpg для булетов используй спецсимвол content: '\2022';
+15 https://s3.amazonaws.com/scrstorage/6956dws5x8035t989h2.jpg лишний отступ. Проверь колонки. Они сделаны не верно. не хватает отступов. Как в прошлом таске
+16 https://s3.amazonaws.com/scrstorage/g695f75186x96b9hx6y5.jpg лейблы не работают + попробуй добавить валидацию
+17 https://s3.amazonaws.com/scrstorage/695846tu04equ79gm8jr74.jpg лучше на кнопку ставить нижний отступ
+18 https://s3.amazonaws.com/scrstorage/6m9k59379011995.jpg валидашку проверь
+19 https://s3.amazonaws.com/scrstorage/ce6dc960754937394.jpg лишний див
+20 https://s3.amazonaws.com/scrstorage/69i609313t7753m2.jpg заголовки делай стронгами
+21 https://s3.amazonaws.com/scrstorage/n69d61398v75cu945h9.jpg - нужен класс на список, и он должен быть застилен глобально
+22 https://s3.amazonaws.com/scrstorage/69h61855376ybk46bd0.jpg список должне быть
+23 https://s3.amazonaws.com/scrstorage/a6962rm38ro8731776.jpg отступ
+24 https://s3.amazonaws.com/scrstorage/6h9625945b03smu2e85.jpg

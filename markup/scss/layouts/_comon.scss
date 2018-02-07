@@ -13,8 +13,16 @@
 }
 
 h1 {
-	font-size: 20px;
-	line-height: 28px;
+		font:  700 24px/28px 'Open Sans Condensed', $base-font-sans-serif;
+		color: $white;
+		text-transform: uppercase;
+}
+
+h2 {
+	font:700 22px/24px  'Open Sans Condensed', $base-font-sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 20px;
 	text-transform: uppercase;
 }
 
@@ -71,7 +79,7 @@ input:not([type="submit"]):not([type="reset"]) {
 	color: $white;
 	text-decoration: none;
 	padding: 8px 18px;
-	margin: 0 10px 0 0;
+	margin: 0 10px 10px 0;
 	border-radius: 2px;
 	background: $orange;
 	display: inline-block;
@@ -89,14 +97,12 @@ input:not([type="submit"]):not([type="reset"]) {
 	padding: 36px 0;
 	margin-bottom: 46px;
 
-	@include media ('<480px') {
-		padding: 18px 0;
+	h1 {
+		display: inline-block;
 	}
 
-	.title {
-		font:  700 24px/28px 'Open Sans Condensed', $base-font-sans-serif;
-		color: $white;
-		text-transform: uppercase;
+	@include media ('<480px') {
+		padding: 18px 0;
 	}
 
 	.breadcrumbs-nav {
@@ -170,14 +176,6 @@ input:not([type="submit"]):not([type="reset"]) {
 	}
 }
 
-.block-title {
-	font:700 22px/24px  'Open Sans Condensed', $base-font-sans-serif;
-	display: inline-block;
-	vertical-align: top;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-
 .column-2-holder {
 	>.column-2 {
 		@include media ('<tablet') {
@@ -201,11 +199,15 @@ input:not([type="submit"]):not([type="reset"]) {
 }
 
 .contact {
-	margin-left: 10px;
 
 	form {
 		background: #f1f0eb;
 		padding: 20px;
+
+		textarea {
+			min-height: 175px;
+			max-height: 175px;
+		}
 	}
 
 	@include media ('<tablet') {
@@ -238,4 +240,14 @@ address {
 
 .contact-section {
 	margin-bottom: 50px;
+
+	.column-2-holder {
+		margin-left: -10px;
+
+		.column-2 {
+			padding-left: 10px;
+		}
+	}
+
+
 }
