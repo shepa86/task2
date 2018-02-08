@@ -1,3 +1,22 @@
+
+=========================  2  =====================================
++++ https://s3.amazonaws.com/scrstorage/7r69592135o1b82dw8.jpg не верное активное состояние (не нужно дроп показывать)
++++ https://s3.amazonaws.com/scrstorage/a76964c48w16ev4e43.jpg https://s3.amazonaws.com/scrstorage/7ei6e97k821137700.jpg
++++ https://s3.amazonaws.com/scrstorage/77b11v6j5015118m9.jpg лишнее
++++ https://s3.amazonaws.com/scrstorage/77120162jo8g6559.jpg на лого ставь всегда ширину
++++ https://s3.amazonaws.com/scrstorage/c7712n64138109k5.jpg имагу сделай блочной
++++ https://s3.amazonaws.com/scrstorage/ht7r715o1356879l95.jpg булеты должны быть  на лишке
++++ https://s3.amazonaws.com/scrstorage/c7o71653r4547722.jpg паддинг ложен быть с двух сторон
+- https://s3.amazonaws.com/scrstorage/7720r0837257x00.jpg
+- https://s3.amazonaws.com/scrstorage/k7721283995did7yo5xq1.jpg
+- https://s3.amazonaws.com/scrstorage/v7722060if72he8484.jpg
+- https://s3.amazonaws.com/scrstorage/o77em2236383f2o822.jpg 768
+- https://s3.amazonaws.com/scrstorage/l772ns26m6us0r07d6127.jpg
+- https://s3.amazonaws.com/scrstorage/7722t86v1e78943b7.jpg
+- https://s3.amazonaws.com/scrstorage/cma7724re6u128925o55.jpg попробуй анимировать свойства
+
+=========================   1   =================================
+
 1 +++ https://s3.amazonaws.com/scrstorage/q68257kvg4o9954675.jpg лишние отступы
 
 2 +++ https://s3.amazonaws.com/scrstorage/6p8h285e2tfi19362.jpg для active state используем класс active

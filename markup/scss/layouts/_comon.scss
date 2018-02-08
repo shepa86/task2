@@ -29,6 +29,7 @@ h2 {
 a {
 	color: $orange;
 	text-decoration: none;
+	@include animate(color);
 }
 
 input:not([type="submit"]):not([type="reset"]),
@@ -40,6 +41,7 @@ textarea {
 	border: 1px solid #dad9d4;
 	border-radius: 2px;
 	font: 12px/1.2 $base-font-family;
+	@include animate(border-color);
 
 	@include placeholder {
 		color: $black;
@@ -57,7 +59,6 @@ textarea {
 	bottom: -15px;
 	left: 0px;
 	color: red;
-
 }
 
 .input-error+.error{
@@ -87,7 +88,6 @@ input:not([type="submit"]):not([type="reset"]) {
 	}
 }
 
-
 .btn {
 	font: 700 14px/16px  'Open Sans Condensed', $base-font-sans-serif;
 	text-transform: uppercase;
@@ -103,6 +103,7 @@ input:not([type="submit"]):not([type="reset"]) {
 
 	&:hover {
 		background: darken($orange, 5%);
+		@include animate(background);
 	}
 }
 
@@ -169,6 +170,7 @@ input:not([type="submit"]):not([type="reset"]) {
 				font-size: 11px;
 				line-height: 12px;
 				text-decoration: none;
+				@include animate(color);
 
 				&:hover {
 					color: $orange;
@@ -209,7 +211,6 @@ input:not([type="submit"]):not([type="reset"]) {
 
 		iframe {
 			width: 100%;
-
 		}
 	}
 }
@@ -218,15 +219,16 @@ input:not([type="submit"]):not([type="reset"]) {
 	margin-bottom: 20px;
 
 	form {
-
-		@include media('>tablet') {
-			background: #f1f0eb;
-			padding: 20px;
-		}
+		background: #f1f0eb;
+		padding: 20px;
 
 		textarea {
 			min-height: 155px;
 			max-height: 155px;
+		}
+
+		@include media("<tablet") {
+			margin: 0 -20px
 		}
 	}
 }
@@ -242,6 +244,8 @@ address {
 
 	a {
 		font-weight: 400;
+		@include animate(opacity);
+
 		&:hover {
 			opacity: 0.8;
 		}
@@ -258,12 +262,10 @@ address {
 	margin-bottom: 30px;
 
 	.column-2-holder {
-		margin-left: -10px;
+		margin: 0 -10px;
 
 		.column-2 {
-			padding-left: 10px;
+			padding: 0 10px;
 		}
 	}
-
-
 }

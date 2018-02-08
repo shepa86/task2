@@ -1,6 +1,5 @@
 #header {
 	background: url(../images/pat1.png), #e5e4df;
-	min-height: 120px;
 
 	.top-row {
 		background: url(../images/pat1-2x.png), linear-gradient(to right, rgba(64,57,49,1) 0%,rgba(62,55,49,1) 26%,rgba(52,47,41,1) 71%,rgba(50,45,39,1) 100%);
@@ -9,35 +8,53 @@
 		color: $light-gray;
 		padding: 10px 10px 15px;
 
+		@include media('<desktop') {
+			padding: 10px 0 15px;
+		}
+
 		a {
 			color: $white;
 			text-decoration: none;
+			@include animate(color);
 
 			&:hover {
 				color: $orange;
 			}
 		}
 
-		.title {
-
-		}
 		.user-box {
 			float: right;
+			@include media('<480px') {
+				float: none;
+			}
 		}
 	}
 
 	.logo {
 		display: inline-block;
 		vertical-align: top;
+		width: 75px;
 	}	
 
 	ul {
 		@extend %listreset;
 	}
+
+	.title {
+		@include media('<480px') {
+			display: block;
+			margin-bottom: 6px;
+		}
+	}
 }
 
 .nav-holder {
-	padding-top: 30px;
+	padding: 30px 0 15px;
+	position: relative;
+
+	@include media('<tablet') {
+		padding: 20px 0;
+	}
 }
 
 .text-slogan {
@@ -63,15 +80,12 @@
 	img {
 		max-width: 100%;
 		height: auto;
+		display: block;
 	}
 
 	a {
 		display: inline-block;
 		vertical-align: top;
-
-		&:hover {
-			opacity: 0.8;
-		}
 	}
 }
 
@@ -79,10 +93,10 @@
 	float: right;
 	margin-top: -40px;
 
-	@include media("<tablet"){
+	@include media("<=tablet"){
 		position: absolute;
 		z-index: 999;
-		top: 132px;
+		top: 115px;
 		left: 0;
 		right: 0;
 		z-index: -1
@@ -99,23 +113,43 @@
 		position: relative;
 		z-index: 999;
 
-		>a {
-			padding: 20px;
-			position: relative;
-			@include media(">tablet"){
-				padding: 43px 21px 20px 22px;
+		&.active,
+		&.hover {
+			>a {
+				box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.25);
 			}
 
-			&:after {
-
-				@include media(">tablet"){
-					content: '\2022';
-					color: $orange;
+			&:before {
+				@include media(">tablet") {
+					content: '';
 					position: absolute;
-					z-index: 900;
-					top: 42px;
-					right: 2px;
+					z-index: 110;
+					top: 0;
+					right: -10px;
+					border: 5px solid transparent;
+					border-bottom: 5px solid #000;
+					border-left: 5px solid #000;
 				}
+			}
+		}
+
+		&:after {
+
+			@include media(">tablet"){
+				content: '\2022';
+				color: $orange;
+				position: absolute;
+				z-index: 900;
+				top: 42px;
+				right: 2px;
+			}
+		}
+
+		>a {
+			padding: 20px;
+
+			@include media(">tablet"){
+				padding: 43px 21px 20px 22px;
 			}
 		}
 
@@ -143,57 +177,49 @@
 		}
 	}
 
-	.active {
+	.hover {
+
 		>a {
+			color: $white!important;
 			background: $orange;
 			transition: all 0.3s ease;
 		}
 
-		.item-list {
-			box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.25);
-
-			@include media(">tablet") {
-				&:before {
-					content: '';
-					position: absolute;
-					z-index: 110;
-					top: 0;
-					right: -10px;
-					border: 5px solid transparent;
-					border-bottom: 5px solid #000;
-					border-left: 5px solid #000;
-				}
-			}
-		}
-
-		a {
-			color: $white!important;
-		}
-
 		.second-level {
-			display: block;
+			visibility: visible;
 			opacity: 1;
-
-			li {
+			@include media("<=tablet") {
+				display: block;
 			}
 		}
 	}
 
-	@include media("<tablet") {
+	@include media("<=tablet") {
 		visibility: hidden;
 		opacity: 0;
 	}
-}
 
+	.active {
+		background: $orange;
+		>a {
+			color: $white;
+		}
+	}
+}
 
 .second-level {
 	min-height: 90px;
 	background: #38332c;
 	border-top: 1px solid $orange;
-	display: none;
 	opacity: 0;
+	@include animate(opacity visibility);
+	
+	@include media("<=tablet") {
+		display: none;
+	}
 
 	@include media(">tablet") {
+		visibility: hidden;
 		position: absolute;
 		z-index: 100;
 		width: 160px;
@@ -229,23 +255,21 @@
 			font-size: 12px;
 			line-height: 14px;
 			padding: 8px 18px;
+			color: $white;
 		}
 	}
 }
 
-.active {
-	background: $orange;
-}
 
 
 .nav-opener {
 	width: 32px;
-	height: 32px;
+	height: 24px;
 	display: block;
 	position: absolute;
 	z-index: 999;
 	right: 20px;
-	top: 60px;
+	top: 24px;
 
 	@include media(">tablet"){
 		display: none;

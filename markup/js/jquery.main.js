@@ -67,7 +67,7 @@ function initFormValidation() {
 // navigation accesibility module
 function TouchNav(opt) {
 	this.options = {
-		hoverClass: 'active',
+		hoverClass: 'hover',
 		menuItems: 'li',
 		menuOpener: 'a',
 		menuDrop: 'ul',
